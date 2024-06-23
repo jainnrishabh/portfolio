@@ -373,11 +373,11 @@ body.offcanvas {
   padding: 0; }
 
 .colorlib-experience,
-.colorlib-skills,
-.colorlib-education,
+/* .colorlib-skills, */
+/* .colorlib-education, */
 .colorlib-blog,
 .colorlib-work,
-.colorlib-about,
+/* .colorlib-about, */
 .colorlib-services,
 .colorlib-contact {
   padding-top: 4em;
@@ -387,11 +387,11 @@ body.offcanvas {
   display: block; }
   @media screen and (max-width: 768px) {
     .colorlib-experience,
-    .colorlib-skills,
-    .colorlib-education,
+    /* .colorlib-skills, */
+    /* .colorlib-education, */
     .colorlib-blog,
     .colorlib-work,
-    .colorlib-about,
+    /* .colorlib-about, */
     .colorlib-services,
     .colorlib-contact {
       padding-top: 5em;
