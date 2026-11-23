@@ -1581,7 +1581,7 @@
   role:     <em>"Software Engineer II"</em>,
   company:  <em>"Sallie Mae"</em>,
   focus:    [<em>"AI agents"</em>, <em>"RAG"</em>, <em>"full stack"</em>],
-  location: <em>"Indianapolis, IN"</em>,
+  location: <em>"SF Bay Area, CA"</em>,
   degree:   <em>"MS Computer Science"</em>,
 };</pre>
 		</div>
@@ -1619,8 +1619,8 @@
 						<div>
 							<h4>Assistants that know the codebase</h4>
 							<p>I built Prequal Copilot, an assistant that reads our tickets, code and documents and
-								answers questions about them. 60 people use it every week, and turning a requirement
-								into a first work item is now 35% faster. I also build agents that keep documentation
+								answers questions about them. Turning a requirement into a first work item is now 35%
+								faster, and it now covers 4 more applications. I also build agents that keep documentation
 								up to date and write the on-call report.</p>
 							<a class="more" href="#projects">See the project <span>&gt;</span></a>
 						</div>
@@ -1675,38 +1675,37 @@
 							<div class="when"><span class="n">01 / 06</span>Jun 2025 — Present</div>
 							<div>
 								<h3>Software Engineer II</h3>
-								<div class="where">Sallie Mae <span>/ Indianapolis, IN</span></div>
-								<p class="plain">I build AI assistants for our engineering teams and deliver the
-									parent loan prequalification app.</p>
+								<div class="where">Sallie Mae <span>/ Hybrid</span></div>
+								<p class="plain">I build AI assistants for our engineering teams, deliver the parent
+									loan prequalification app, and build the AWS services behind it.</p>
 							</div>
 							<span class="tog" aria-hidden="true"></span>
 						</summary>
 						<div class="body">
 							<ul class="list">
-								<li>Cut requirement-to-first-story time by <b>35%</b> for <b>60 weekly users</b> by
-									building <b>Prequal Copilot</b>, a RAG agent on AWS Bedrock over ADO, GitHub code
-									and docs.</li>
+								<li>Delivered the Prequal Parent Loan app on web and agent portal, driving <b>8,200+
+										applications</b>, <b>3,200+ approvals</b> and <b>1,550+ conversions</b>.</li>
+								<li>Cut requirement-to-first-user-story time by <b>35%</b> by building <b>Prequal
+										Copilot</b>, a RAG agent on AWS Bedrock over ADO, codebase and docs.</li>
 								<li>Onboarded <b>4 more applications</b> and reduced code and doc search time by
 									<b>30%</b> by making ingestion and retrieval application-agnostic.</li>
 								<li>Lifted relevant-answer rate by <b>25%</b> (100-question eval) using Titan
 									embeddings, Aurora PostgreSQL vector store and re-ranking.</li>
-								<li>Kept data under <b>24 hours</b> stale and lowered re-embedding compute by
+								<li>Kept the index fresh within <b>24 hours</b> while cutting re-embedding compute by
 									<b>70%</b> with a nightly incremental indexing job.</li>
 								<li>Automated wiki upkeep across <b>4 repositories</b> with documentation agents that
 									keep docs in sync with source, used by peers.</li>
-								<li>Replaced a manual PagerDuty and ADO check with minutes of review by building an
-									<b>on-call report agent</b> adopted by teammates.</li>
-								<li>Standardized reusable AI skills and agent conventions in a shared repo, so
-									teammates build with the same agent workflows.</li>
-								<li>Reduced first-iteration build time by <b>25%</b> with spec-driven development
-									using Figma MCP and reusable AI skills.</li>
-								<li>Delivered the Prequal Parent Loan app on web and agent portal, driving <b>8,200+
-										applications</b>, <b>3,200+ approvals</b> and <b>1,550+ conversions</b>.</li>
-								<li>Resolved <b>20+ production issues</b> from <b>238 PagerDuty incidents</b> with
-									persistent retry queues and noise reduction.</li>
+								<li>Cut daily on-call triage from a manual PagerDuty/ADO check to a few minutes of
+									review by building an <b>on-call report agent</b>.</li>
+								<li>Built a rate-limited, region-based <b>API Gateway</b> and <b>Lambda</b>
+									microservice that returns rejection reasons for adverse action letters.</li>
+								<li>Fixed <b>DynamoDB</b> item-size failures by offloading credit responses to
+									multi-region replicated <b>S3</b>, keeping references in DynamoDB.</li>
+								<li>Enabled cross-region customer data redaction and reference resolution across
+									dependent APIs, with all infrastructure in <b>CloudFormation</b>.</li>
 							</ul>
 							<p class="stack"><b>Stack:</b> AWS Bedrock / RAG / Titan Embeddings / Aurora PostgreSQL /
-								AI Agents / Figma MCP / PagerDuty</p>
+								AI Agents / API Gateway / Lambda / DynamoDB / S3 / CloudFormation</p>
 						</div>
 					</details>
 
@@ -1876,10 +1875,10 @@
 						<p>An AI assistant that answers questions using our own tickets, code and documents, so
 							people stop searching by hand.</p>
 						<ul class="list">
-							<li><b>35%</b> faster from requirement to first story.</li>
-							<li><b>60</b> weekly users, and <b>4</b> more applications onboarded.</li>
+							<li><b>35%</b> faster from requirement to first user story.</li>
+							<li><b>4</b> more applications onboarded and <b>30%</b> less search time.</li>
 							<li><b>25%</b> more relevant answers on a 100-question test.</li>
-							<li>Data never more than <b>24 hours</b> old, with <b>70%</b> less re-embedding compute.
+							<li>Index kept fresh within <b>24 hours</b>, with <b>70%</b> less re-embedding compute.
 							</li>
 						</ul>
 						<p class="stack"><b>Stack:</b> AWS Bedrock / Claude / Titan Embeddings / Aurora PostgreSQL /
@@ -1889,16 +1888,13 @@
 					<article class="panel project reveal">
 						<div class="top"><b>03</b><span>Sallie Mae</span></div>
 						<h3>Agents for the team</h3>
-						<p>Small AI agents that take routine chores off engineers, built on conventions the whole
-							team shares.</p>
+						<p>Small AI agents that take routine chores off engineers.</p>
 						<ul class="list">
 							<li>Documentation agents keep wikis in sync with code across <b>4 repositories</b>.</li>
-							<li>An on-call report agent turns a manual PagerDuty and ADO check into minutes of
-								review.</li>
-							<li>Reusable AI skills in a shared repo, used by teammates.</li>
-							<li><b>25%</b> faster first builds with spec-driven development and Figma MCP.</li>
-						</ul>
-						<p class="stack"><b>Stack:</b> AI Agents / MCP / Spec-Driven Development</p>
+							<li>An on-call report agent cuts daily triage from a manual PagerDuty and ADO check to a
+								few minutes of review.</li>
+													</ul>
+						<p class="stack"><b>Stack:</b> AI Agents / AWS Bedrock / MCP</p>
 					</article>
 
 					<article class="panel project reveal">
@@ -2016,15 +2012,15 @@
 					<div class="about-photo">
 						<div class="photo"><img src="images/about.jpg" alt="Portrait of Rishabh Rajmal Jain"
 								width="280" height="280" loading="lazy"></div>
-						<div class="photo-cap">/ indianapolis_in</div>
+						<div class="photo-cap">/ sf_bay_area_ca</div>
 					</div>
 					<div class="about-text">
 						<p class="big">I like taking a problem from the data layer all the way to the screen, and
 							then measuring whether it made someone's work faster.</p>
-						<p>I'm Rishabh, a Software Engineer II at Sallie Mae in Indianapolis. Right now my work is
+						<p>I'm Rishabh, a Software Engineer II at Sallie Mae, based in the San Francisco Bay Area. Right now my work is
 							about putting AI to practical use: assistants that help teams find answers in their own
 							code and documents, and agents that handle chores like documentation and on-call
-							reports.</p>
+							reports. I also build the AWS services behind our loan apps.</p>
 						<p>I got here by a varied route. I built data pipelines at Larsen &amp; Toubro Infotech,
 							shipped 20+ mobile apps as a freelancer, and built a mixed reality training simulation
 							at the University of Delaware while earning my Master's in Computer Science. At Sallie
